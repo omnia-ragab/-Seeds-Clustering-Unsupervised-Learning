@@ -1,10 +1,10 @@
-# 🌾 Seeds Clustering — Unsupervised Learning
+#  Seeds Clustering — Unsupervised Learning
 
 > Discovering natural groupings in wheat seed varieties using K-Means and Agglomerative Hierarchical Clustering, without using class labels during training.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project applies **unsupervised machine learning** to cluster wheat seeds into groups based on physical measurements. The dataset is sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/236/seeds) and contains 3 varieties of wheat: **Kama**, **Rosa**, and **Canadian**.
 
@@ -20,7 +20,7 @@ The class labels are intentionally hidden during clustering and only used at the
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 seeds-clustering/
@@ -33,7 +33,7 @@ seeds-clustering/
 
 ---
 
-## 🔬 Methodology
+##  Methodology
 
 ### Phase 1: Exploratory Data Analysis
 - Loaded dataset from [UCI Repository](https://archive.ics.uci.edu/ml/machine-learning-databases/00236/seeds_dataset.txt)
@@ -55,14 +55,14 @@ seeds-clustering/
 | 2 | **Agglomerative Hierarchical** | `n_clusters=3`, `linkage='ward'` |
 
 **Optimal K selection** was done using:
-- 📉 **Elbow Method** (Inertia / WCSS)
-- 📈 **Silhouette Score** — both confirmed K=3
+-  **Elbow Method** (Inertia / WCSS)
+-  **Silhouette Score** — both confirmed K=3
 
 **Dimensionality Reduction** via PCA (2 components) for cluster visualization.
 
 ---
 
-## 📊 Features
+##  Features
 
 | Feature | Description |
 |---|---|
@@ -76,7 +76,7 @@ seeds-clustering/
 
 ---
 
-## 📏 Evaluation Metrics
+##  Evaluation Metrics
 
 Since this is unsupervised learning, multiple metrics were used:
 
@@ -89,18 +89,18 @@ Since this is unsupervised learning, multiple metrics were used:
 
 ---
 
-## 🔑 Key Insights
+##  Key Insights
 
-- ✅ Both algorithms successfully recovered the **3 natural wheat variety clusters**
-- 🌸 **Rosa** wheat has the **largest area and perimeter**
-- 🌱 **Canadian** wheat has the **smallest area and perimeter**
-- ⚙️ **Kama** wheat has the **highest compactness**
-- 📐 PCA captures **72%+ of total variance** in just 2 components
-- 🏆 **K-Means** outperformed Agglomerative Clustering on the majority of metrics
+- Both algorithms successfully recovered the **3 natural wheat variety clusters**
+-  **Rosa** wheat has the **largest area and perimeter**
+-  **Canadian** wheat has the **smallest area and perimeter**
+-  **Kama** wheat has the **highest compactness**
+-  PCA captures **72%+ of total variance** in just 2 components
+-  **K-Means** outperformed Agglomerative Clustering on the majority of metrics
 
 ---
 
-## 🛠️ Technologies
+##  Technologies
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikit-learn)
@@ -114,7 +114,7 @@ scipy (dendrogram, linkage)
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. **Clone the repository**
    ```bash
@@ -132,11 +132,11 @@ scipy (dendrogram, linkage)
    jupyter notebook Seeds_Clustering_Notebook.ipynb
    ```
 
-> 💡 The dataset is fetched automatically from the UCI URL — no manual download required.
+>  The dataset is fetched automatically from the UCI URL — no manual download required.
 
 ---
 
-## 📋 Dataset Source
+##  Dataset Source
 
 - **Repository:** UCI Machine Learning Repository
 - **Dataset:** [Seeds Dataset](https://archive.ics.uci.edu/dataset/236/seeds)
